@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --ff-heading: 'Epilogue', sans-serif;
+    --ff-texting: 'Open sans', sans-serif;
+    --bg-primary: #28293E;
+}
+
+body{
+    font-family: var(--ff-texting);
+    background: var(--bg-primary);
+}
+
+header{
+    font-family: var(--ff-heading);
+}
