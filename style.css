@@ -48,6 +48,7 @@ header {
   font-family: var(--ff-heading);
 
   text-align: center;
+
 }
 
 header p {
@@ -114,14 +115,45 @@ header h1 {
   align-items: center;
 }
 
+header{
+    animation: topdown 700ms;
+    /*animation-name: topdown;
+     animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-delay: 200ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-play-state: paused; */
+}
+
+/* header:hover{
+    animation-play-state: running;
+} */
+
+main{
+    animation: downtop 700ms  350ms backwards;
+}
+
 @keyframes topdown {
   0% {
     opacity: 0;
     transform: translateY(-15px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
